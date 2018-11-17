@@ -1,0 +1,6 @@
+Q2:
+
+Sieve of Eratosthenes, current implementation, runs in O(n^2) or polynomial time.
+This is rather inefficient, thus an alternative algorithm should be found. 
+The issue must lie in the masking of the list. 
+Line of Best Fit: [7.87 * 10^-9](x^1.83), R^2: 0.998
