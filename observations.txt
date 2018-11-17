@@ -1,6 +1,12 @@
 Q2:
 
-Sieve of Eratosthenes, current implementation, runs in O(n^2) or polynomial time.
+Sieve of Eratosthenes, version 1, runs in O(n^2) or polynomial time.
 This is rather inefficient, thus an alternative algorithm should be found. 
 The issue must lie in the masking of the list. 
 Line of Best Fit: [7.87 * 10^-9](x^1.83), R^2: 0.998
+
+Sieve of Eratosthenes, version 2, runs in sub-O(n^2), potentially linear time (but unlikely).
+The sieve / mask creation is more efficient. 
+Line of Best Fit: [8.11 * 10^-8](x^1.08), R^2: 0.991
+
+The results from the algorithm analysis show variance in high-n cases (ie; n > 5000000).
