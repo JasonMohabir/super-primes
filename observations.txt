@@ -1,3 +1,7 @@
+Jason Mohabir
+
+Q1:
+
 Q2:
 
 Sieve of Eratosthenes, version 1, runs in O(n^2) or polynomial time.
@@ -10,3 +14,11 @@ The sieve / mask creation is more efficient.
 Line of Best Fit: [8.11 * 10^-8](x^1.08), R^2: 0.991
 
 The results from the algorithm analysis show variance in high-n cases (ie; n > 5000000).
+
+Q3:
+
+Q4:
+
+Q5:
+
+Q6:

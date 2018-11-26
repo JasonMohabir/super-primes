@@ -1,16 +1,21 @@
+
+#Jason Mohabir
+
 import math
 
 
+
+# Naive algorithm that runs in polynomial time
+def gcdnaive(x,y):
+   if y == 0:
+      return x
+   else:
+      return gcdnaive(y, x % y)
+
+# Euclid's Algorithm
 def gcd(x, y): 
-   print("START")
    while(y): 
-      print("///////////")
-      print(x)
-      print(y)
       x, y = y, x % y 
-      print(x)
-      print(y)
-   print("GCD:")
    return x 
 
 print(gcd(60,48))

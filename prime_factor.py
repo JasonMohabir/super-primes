@@ -1,3 +1,7 @@
+# Jason Mohabir
+
+
+# Run-time efficieny: O(n^2)
 
 def prime_factor_div_0(n):
     retList = []
