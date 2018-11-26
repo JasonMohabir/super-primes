@@ -13,7 +13,6 @@ def sieve(n):
 
     return(retList)
 
-
 def sieve_v2(n):
 
     sieve = [True] * (n-1)
@@ -24,9 +23,4 @@ def sieve_v2(n):
                 sieve[j-2] = False
     
     return(np.array(list(range(2,n+1)))[sieve])
-
-prime = 22953686867719691230002707821868552601124472329079
-prime = 5915587277
-
-print(sieve_v2(prime))
 

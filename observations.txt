@@ -2,6 +2,10 @@ Jason Mohabir
 
 Q1:
 
+Euclid's Algorithm scales at Lamé's Theorem: In carrying out the Euclidean algorithm to find the greatest common divisor of two positive integers a and b, the number of steps needed will never exceed 5 times the number of base 10 digits in the smaller of the two integers a and b.
+
+Relates to Golden Ratio (relates to fibonnaci sequence)
+
 Q2:
 
 Sieve of Eratosthenes, version 1, runs in O(n^2) or polynomial time.
@@ -14,6 +18,8 @@ The sieve / mask creation is more efficient.
 Line of Best Fit: [8.11 * 10^-8](x^1.08), R^2: 0.991
 
 The results from the algorithm analysis show variance in high-n cases (ie; n > 5000000).
+
+More test-cases need to be run, but algorithm runs in O( n * log ( log n )) time apparently
 
 Q3:
 
