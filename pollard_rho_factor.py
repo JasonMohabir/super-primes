@@ -1,24 +1,17 @@
+from random import randint
 
 # Implement more efficient gcd algorithm with Pollard's algorithm
-
+# Implement Pollard's, Brent's, Pollard's (p+1)
 def gcd(a, b):
     while a % b != 0:
         a, b = b, a % b
     return b
 
-number = 10403
-x_fixed = 2
-cycle_size = 2
-x = 2
-factor = 1
+def pollards_rho(n):
+    x = 2; y = 2; d = 1
+    f = lambda x: (x**2 + 1) % n
+    while d == 1:
+        x = f(x); y = f(f(y))
+        d = gcd(abs(x-y), n)
+    if d != n: return d
 
-while factor == 1:
-    count = 1
-    while count <= cycle_size and factor <= 1:
-        x = (x*x + 1) % number
-        factor = gcd(x - x_fixed, number)
-        count += 1
-    cycle_size *= 2
-    x_fixed = x
-
-print(factor)

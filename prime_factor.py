@@ -1,8 +1,8 @@
 # Jason Mohabir
 
-
 # Run-time efficieny: O(n^2)
 
+# Trial Division
 def prime_factor_div_0(n):
     retList = []
     factor = 2
@@ -15,6 +15,7 @@ def prime_factor_div_0(n):
             factor += 1
     return retList
 
+# More efficient trial division
 def prime_factor_div_1(n):
     retList = []
     
@@ -34,3 +35,5 @@ def prime_factor_div_1(n):
         retList.append(n)
 
     return retList
+
+# Implement Sieve prime factorization
